@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <button onclick="fun()">Add Task</button>
+    <ul id="ul">
+    </ul>
+    <span id="spa">hello</span>
+
+    <script>
+        function fun(){
+        "use strict";
+         var A = prompt("Task Name");
+         var li = document.createElement("li");
+         var C = document.createTextNode(A);
+        
+        li.appendChild(C) ;
+        var B = document.getElementById("ul");
+        B.appendChild(li) ;
+
+        B.insertBefore(li , B,childNodes[0]);
+         S()
+        }
+        var q = 0;
+        function S(){
+            q++
+            var z =  document.getElementById("spa");
+            z.innerHTML = q;
+            
+        }
+        
+        
+    </script>
+</body>
+
+</html>
